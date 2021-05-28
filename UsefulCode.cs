@@ -20,7 +20,9 @@ namespace Name
         {
                             int lenght = 16;
                             var range = "123AbCcDdEeFfGgHhIiJjKkLlMm789NnOoPpQqRrSsTt0UuVvWwXxYyZz456";
-                            var GenrateRandomString = new Random();
+                            var GenerujRandomowyString = new Random();
+                            string Nitro;
+            
                             Nitro = "https://discord.gift/"+ new string(
                             Enumerable.Repeat(range, lenght)
                            .Select(s => s[GenerujRandomowyString.Next(s.Length)])
