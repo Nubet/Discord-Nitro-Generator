@@ -15,22 +15,18 @@ namespace Name
         public static string Nitro;
 
         static void Main(string[] args)
-
-       
         {
-                            int lenght = 16;
-                            var range = "123AbCcDdEeFfGgHhIiJjKkLlMm789NnOoPpQqRrSsTt0UuVvWwXxYyZz456";
-                            var GenerujRandomowyString = new Random();
-                            string Nitro;
-            
-                            Nitro = "https://discord.gift/"+ new string(
-                            Enumerable.Repeat(range, lenght)
-                           .Select(s => s[GenerujRandomowyString.Next(s.Length)])
-                           .ToArray());
-                          
+             int lenght = 16;
+             var range = "123AbCcDdEeFfGgHhIiJjKkLlMm789NnOoPpQqRrSsTt0UuVvWwXxYyZz456";
+             var GenerujRandomowyString = new Random();
+             string Nitro;
+
+             Nitro = "https://discord.gift/"+ new string(
+             Enumerable.Repeat(range, lenght)
+             Select(s => s[GenerujRandomowyString.Next(s.Length)])
+            .ToArray());
         }
-                             
-        
+    
     }
 }
     //a piece of my code                                                                        
